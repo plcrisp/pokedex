@@ -12,7 +12,7 @@
 
         <section class="pokemon__status">
         <img
-            [src]="pokemon[0].sprites.other.dream_world.front_default"
+            [src]="pokemon[0].sprites.front_default"
             [alt]="pokemon[0].name"
             class="slideInDown"
         >
@@ -23,13 +23,15 @@
 
             <ol>
                 <li *ngFor="let value of pokemon[0].stats">
-                    {{ value.stat.name }}
-
-                    <strong>
-                        {{ value.base_stat }}
-                    </strong>
+                  {{ value.stat.name }}
+              
+                  <strong>
+                    {{ value.base_stat }}
+                  </strong>
                 </li>
-            </ol>
+              </ol>
+              
+              
             </section>
 
             <a [routerLink]="['']" class="btn btn__secondary">
