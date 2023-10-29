@@ -36,7 +36,7 @@
               <ol>
                 <li>
                   <label>
-                    <input type="checkbox" [(ngModel)]="checkbox1Checked" (change)="onCheckbox1Change()">
+                    <input type="checkbox" [(ngModel)]="pokeCheckService.checkbox1Checked">
                     <div class="icon-wrapper">
                       <i class="fa fa-star" aria-hidden="true"></i>
                     </div>
@@ -44,7 +44,7 @@
               
                   <strong>
                     <label>
-                      <input type="checkbox" [(ngModel)]="checkbox2Checked" (change)="onCheckbox2Change()">
+                      <input type="checkbox" [(ngModel)]="pokeCheckService.checkbox2Checked">
                       <div class="icon-wrapper2">
                         <i class="fa fa-check" aria-hidden="true"></i>
                       </div>

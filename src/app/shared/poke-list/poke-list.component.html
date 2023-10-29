@@ -13,6 +13,14 @@
 
                     <h2>
                         {{ pokemon.name }}
+                        <span *ngIf="pokeCheckService.checkbox1Checked">
+                            <!-- Coloque aqui o código HTML para o símbolo desejado -->
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                          </span>
+                          <span *ngIf="pokeCheckService.checkbox2Checked">
+                            <!-- Coloque aqui o código HTML para o segundo símbolo desejado -->
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                          </span>
                     </h2>
                 </div>
 

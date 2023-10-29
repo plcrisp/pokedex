@@ -4,6 +4,7 @@ import { forkJoin } from 'rxjs';
 
 //Services
 import { PokeApiService } from 'src/app/service/poke-api.service';
+import { PokeCheckService } from 'src/app/service/poke-check.service';
 
 @Component({
   selector: 'app-details',
@@ -21,7 +22,8 @@ export class DetailsComponent implements OnInit {
 
   constructor(
     private ActivatedRoute : ActivatedRoute,
-    private pokeApiService: PokeApiService
+    private pokeApiService: PokeApiService,
+    public pokeCheckService: PokeCheckService
   ) { }
 
   ngOnInit(): void{
