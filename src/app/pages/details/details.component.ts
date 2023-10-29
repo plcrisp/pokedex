@@ -41,6 +41,17 @@ export class DetailsComponent implements OnInit {
       error => {
         this.apiError = true;
       }
-    );
+    ); 
+  }
+
+  checkbox1Checked = false;
+  checkbox2Checked = false;
+
+  onCheckbox1Change() {
+    this.checkbox1Checked = !this.checkbox1Checked;
+  }
+
+  onCheckbox2Change() {
+    this.checkbox2Checked = !this.checkbox2Checked;
   }
 }

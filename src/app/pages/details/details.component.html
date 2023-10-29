@@ -19,6 +19,7 @@
 
         <article class="pokemon__status__statistics fadeIn">
             <section>
+
             <h3>Estatísticas</h3>
 
             <ol>
@@ -29,9 +30,30 @@
                     {{ value.base_stat }}
                   </strong>
                 </li>
+              </ol>              
+              
+              <div class="markers">
+              <ol>
+                <li>
+                  <label>
+                    <input type="checkbox" [(ngModel)]="checkbox1Checked" (change)="onCheckbox1Change()">
+                    <div class="icon-wrapper">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </label>
+              
+                  <strong>
+                    <label>
+                      <input type="checkbox" [(ngModel)]="checkbox2Checked" (change)="onCheckbox2Change()">
+                      <div class="icon-wrapper2">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                      </div>
+                    </label>
+                  </strong>
+                </li>
               </ol>
-              
-              
+            </div>
+
             </section>
 
             <a [routerLink]="['']" class="btn btn__secondary">

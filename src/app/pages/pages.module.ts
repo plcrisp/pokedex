@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 //Module Rounting
 import { RoutingModule } from './rounting.module';
@@ -20,7 +21,8 @@ import { DetailsComponent } from './details/details.component';
   imports: [
     CommonModule,
     RoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule, 
   ]
 })
 export class PagesModule { }

@@ -90,6 +90,58 @@
 						font-weight: 300;
 					}
 				}
+
+				.markers{
+					strong{
+						margin-right: rem-calc(200);
+					}
+
+					li{
+						margin-left: rem-calc(200);
+					}
+				}
+
+				input{
+					display: none;
+				}
+
+				.icon-wrapper{
+					width: rem-calc(50);
+					height: rem-calc(50);
+					background-color: #fff;
+					display: grid;
+					place-items: center;
+					border-radius: rem-calc(10);
+				}
+
+				.icon-wrapper i{
+					color: #83858c;
+					font-size: rem-calc(24);
+					transition: color 0.3s;
+				}
+
+				input:checked+.icon-wrapper i{
+					color: #ffbf69;
+				}
+
+				.icon-wrapper2{
+					width: rem-calc(50);
+					height: rem-calc(50);
+					background-color: #fff;
+					display: grid;
+					place-items: center;
+					border-radius: rem-calc(10);
+				}
+
+				.icon-wrapper2 i{
+					color: #83858c;
+					font-size: rem-calc(24);
+					transition: color 0.3s;
+				}
+
+				input:checked+.icon-wrapper2 i{
+					color: #7dce82;
+				}
 				  
 			}
 		}
