@@ -5,6 +5,10 @@
 	main {
 		margin-top: rem-calc(40);
 
+		a{
+			color: #fff;
+		}
+
 		.pokemon__names {
 			position: relative;
 			display: flex;
@@ -16,7 +20,7 @@
 			padding: 0 rem-calc(30);
 
 			h1 {
-				color: var(--branco);
+				color: #fff;
 				font-size: rem-calc(32);
 				text-transform: capitalize;
 			}
@@ -80,6 +84,10 @@
 					padding: 0;
 					margin: 0;
 				}
+
+				.stat-list span{
+					color: var(--primary-color);
+				}
 				
 				.stat-list li {
 					display: flex;
@@ -105,7 +113,7 @@
 				
 				.stat-bar {
 					flex: 5;
-					background-color: #f1f1f1;
+					background-color: var(--cinza);
 					height: rem-calc(15);
 					border-radius: rem-calc(10);
 					overflow: hidden;
@@ -124,6 +132,10 @@
 
 					li{
 						margin-left: rem-calc(238);
+					}
+					input{
+						background: none;
+						cursor: pointer;
 					}
 				}
 

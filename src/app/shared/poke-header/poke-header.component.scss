@@ -6,6 +6,32 @@
         flex-direction: column;
         align-items: center;
         padding: rem-calc(40) 0;
+
+        img{
+            width: 50px;
+        }
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+
+        h1{
+            margin-left: 10px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 36px;
+        }
+    }
+
+    button{
+        background: none;
+        cursor: pointer;
+
+        img{
+            width: 21px;
+        }
+
     }
 
     
