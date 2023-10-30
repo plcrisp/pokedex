@@ -22,15 +22,15 @@
 
             <h3>Estatísticas</h3>
 
-            <ol>
-                <li *ngFor="let value of pokemon[0].stats">
-                  {{ value.stat.name }}
-              
-                  <strong>
-                    {{ value.base_stat }}
-                  </strong>
-                </li>
-              </ol>              
+            <ol class="stat-list">
+              <li *ngFor="let value of pokemon[0].stats">
+                  <span class="stat-name">{{ value.stat.name }}</span>
+                  <span class="stat-value">{{ value.base_stat }}</span>
+                  <div class="stat-bar">
+                      <div class="bar-value" [style.width.%]="(value.base_stat / 200) * 100"></div>
+                  </div>
+              </li>
+          </ol>             
               
               <div class="markers">
               <ol>
