@@ -15,4 +15,5 @@ export class PokeInfoComponent {
     this.checkbox1Checked = !this.checkbox1Checked;
   }
 
+
 }
