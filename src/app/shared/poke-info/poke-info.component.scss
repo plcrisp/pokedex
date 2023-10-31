@@ -8,7 +8,7 @@
 
     .wall{
         border-radius: rem-calc(10);
-        margin-bottom: rem-calc(20);
+        margin-bottom: rem-calc(40);
         box-shadow: 0 3px 4px 0 rgba(0,0,0,0.5);
     }
 
@@ -16,5 +16,56 @@
         font-size: rem-calc(22);
         font-weight: 700;
         color: #fff;
+    }
+
+    h2{
+        font-size: rem-calc(22);
+        font-weight: 700;
+        color: #fff;
+        margin-top: rem-calc(40);
+    }
+
+    .galeria{
+        margin-top: rem-calc(40);
+        margin-bottom: rem-calc(40);
+        display: flex;
+        align-items: center;
+        img{
+            width: rem-calc(75);
+            margin-left: rem-calc(35);
+        }
+        .ultima{
+            margin-right: rem-calc(35);
+        }
+    }
+
+    .markers{
+        input{
+            background: none;
+            cursor: pointer;
+            display: none;
+            
+        }
+
+
+    }
+
+    .icon-wrapper2{
+        width: rem-calc(50);
+        height: rem-calc(50);
+        background-color: #29335C;
+        display: grid;
+        place-items: center;
+        border-radius: rem-calc(10);
+    }
+
+    .icon-wrapper2 i{
+        color: #96989e;
+        font-size: rem-calc(24);
+        transition: color 0.3s;
+    }
+
+    input:checked+.icon-wrapper2 i{
+        color: #7dce82;
     }
 }

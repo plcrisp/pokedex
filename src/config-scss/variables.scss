@@ -1,6 +1,8 @@
 :root{
     --branco: #fff;
     --cinza: #efefef;
+    
+    --color-button: #83858c;
 
     --primary-color: #29335C;
     --secondary-color: #DB2B39;
@@ -9,5 +11,8 @@
 :root .dark-theme{
     --branco: #4b4b4b;
     --cinza: #7A7978;
+
+    --color-button: #fff;
+
     --primary-color: #fff;
 }

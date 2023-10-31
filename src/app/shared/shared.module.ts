@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 //Components
 import { PokeHeaderComponent } from './poke-header/poke-header.component';
@@ -25,7 +26,8 @@ import { PokeInfoComponent } from './poke-info/poke-info.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ]
 })
 export class SharedModule { }
