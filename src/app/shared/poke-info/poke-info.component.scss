@@ -25,47 +25,19 @@
         margin-top: rem-calc(40);
     }
 
-    .galeria{
-        margin-top: rem-calc(40);
-        margin-bottom: rem-calc(40);
-        display: flex;
-        align-items: center;
-        img{
-            width: rem-calc(75);
-            margin-left: rem-calc(35);
-        }
-        .ultima{
-            margin-right: rem-calc(35);
-        }
+    button{
+        margin-top: rem-calc(10);
+        font-size: rem-calc(26);
+        background: none;
     }
 
-    .markers{
-        input{
-            background: none;
-            cursor: pointer;
-            display: none;
-            
-        }
-
-
-    }
-
-    .icon-wrapper2{
-        width: rem-calc(50);
-        height: rem-calc(50);
-        background-color: #29335C;
-        display: grid;
-        place-items: center;
-        border-radius: rem-calc(10);
-    }
-
-    .icon-wrapper2 i{
-        color: #96989e;
-        font-size: rem-calc(24);
+    .button-default {
+        color: #83858c;
         transition: color 0.3s;
     }
-
-    input:checked+.icon-wrapper2 i{
+      
+    .button-alternate {
         color: #7dce82;
+        transition: color 0.3s;
     }
 }

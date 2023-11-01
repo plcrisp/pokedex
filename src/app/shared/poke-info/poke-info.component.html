@@ -4,15 +4,6 @@
 
 <h2>Mas antes de começar, você tem sua Pokedex completa?</h2>
 
-<div class="markers">
-    <ol>
-      <li>
-        <label>
-          <input type="checkbox" [(ngModel)]="pokeCheckService.checkbox1Checked" >
-          <div class="icon-wrapper2">
-            <i class="fa fa-check" aria-hidden="true"></i>
-          </div>
-        </label>
-      </li>
-    </ol>
-  </div>
+<button (click)="toggleCheckbox(); alert()">
+  <i class="fa fa-check" [ngClass]="checkbox1Checked ? 'button-alternate' : 'button-default'"></i>
+</button>

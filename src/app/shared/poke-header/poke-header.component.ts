@@ -13,7 +13,7 @@ export class PokeHeaderComponent {
   public toggle(){
     const theme = document.body.classList.toggle('dark-theme');
 
-    if(theme){
+    if(!theme){
       this.textTheme = ETheme.TEXT_SUN;
       return (this.icon = ETheme.ICON_SUN);
     }
